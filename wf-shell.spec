@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(alsa)
 BuildRequires:  pkgconfig(gtk-layer-shell-0)
 BuildRequires:  pkgconfig(gtkmm-3.0)
 BuildRequires:  pkgconfig(libpulse)
+BuildRequires:  pkgconfig(libnotify)
 BuildRequires:  pkgconfig(wayfire)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-protocols)
@@ -44,7 +45,9 @@ install -D -m 0644 wf-shell.ini.example %{buildroot}%{_datadir}/wayfire/wf-shell
 %{_bindir}/wayland-logout
 #{_datadir}/wayfire/
 %{_datadir}/wayfire/wf-shell.ini.example
-#{_datadir}/wayfire/icons/*.png
+%{_datadir}/wayfire/icons/wayfire.png
+%{_datadir}/wayfire/metadata/
+%{_datadir}/wayfire/wallpaper.jpg
 
 %files devel
 %{_libdir}/pkgconfig/wf-shell.pc
