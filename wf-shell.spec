@@ -10,6 +10,7 @@ Source0:        https://github.com/WayfireWM/%{name}/releases/download/v%{versio
 BuildRequires:  meson
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(alsa)
+BuildRequires:  pkgconfig(dbusmenu-gtk3-0.4)
 BuildRequires:  pkgconfig(gtk-layer-shell-0)
 BuildRequires:  pkgconfig(gtkmm-3.0)
 BuildRequires:  pkgconfig(libpulse)
