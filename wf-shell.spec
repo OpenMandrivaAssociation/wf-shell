@@ -44,11 +44,11 @@ install -D -m 0644 wf-shell.ini.example %{buildroot}%{_datadir}/wayfire/wf-shell
 %files
 %{_bindir}/wf-*
 %{_bindir}/wayland-logout
-#{_datadir}/wayfire/
 %{_datadir}/wayfire/wf-shell.ini.example
 %{_datadir}/wayfire/icons/wayfire.png
 %{_datadir}/wayfire/metadata/
 %{_datadir}/wayfire/wallpaper.jpg
+%{_mandir}/man1/wayland-logout.1.*
 
 %files devel
 %{_libdir}/pkgconfig/wf-shell.pc
