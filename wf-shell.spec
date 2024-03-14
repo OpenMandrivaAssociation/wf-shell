@@ -1,5 +1,5 @@
 Name:           wf-shell
-Version:        0.8.0
+Version:        0.8.1
 Release:        1
 Summary:        A GTK3-based panel for wayfire
 License:        MIT
