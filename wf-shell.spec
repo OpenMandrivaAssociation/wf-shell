@@ -49,6 +49,8 @@ install -D -m 0644 wf-shell.ini.example %{buildroot}%{_datadir}/wayfire/wf-shell
 %{_datadir}/wayfire/metadata/
 %{_datadir}/wayfire/wallpaper.jpg
 %{_mandir}/man1/wayland-logout.1.*
+%{_iconsdir}/hicolor/*x*/apps/wayfire.png
+%{_iconsdir}/hicolor/scalable/apps/wayfire.svg
 
 %files devel
 %{_libdir}/pkgconfig/wf-shell.pc
