@@ -27,6 +27,7 @@ BuildRequires:  pkgconfig(wf-config)
 BuildRequires:  pkgconfig(wireplumber-0.5)
 BuildRequires:  pkgconfig(wlroots-0.20)
 BuildRequires:  pkgconfig(xkbregistry)
+BuildRequires:  pkgconfig(yyjson)
 
 %description
 wf-shell is a repository which contains various components that can be used to build a fully functional desktop based around wayfire:
