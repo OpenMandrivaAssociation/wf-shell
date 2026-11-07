@@ -1,7 +1,7 @@
 Name:           wf-shell
-Version:        0.10.0
+Version:        0.11.0
 Release:        1
-Summary:        A GTK3-based panel for wayfire
+Summary:        A collection of GTK4-based desktop components designed for Wayfire and Wlroots desktops
 License:        MIT
 Group:          Wayfire
 URL:            https://wayfire.org/
@@ -10,18 +10,32 @@ Source0:        https://github.com/WayfireWM/%{name}/releases/download/v%{versio
 BuildRequires:  meson
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(alsa)
-BuildRequires:  pkgconfig(dbusmenu-gtk3-0.4)
-BuildRequires:  pkgconfig(gtk-layer-shell-0)
-BuildRequires:  pkgconfig(gtkmm-3.0)
+BuildRequires:  pkgconfig(ddcutil)
+BuildRequires:  pkgconfig(dbusmenu-glib-0.4)
+BuildRequires:  pkgconfig(epoxy)
+BuildRequires:  pkgconfig(gtk4-layer-shell-0)
+BuildRequires:  pkgconfig(gtkmm-4.0)
+BuildRequires:  pkgconfig(libpipewire-0.3)
 BuildRequires:  pkgconfig(libpulse)
 BuildRequires:  pkgconfig(libnotify)
+BuildRequires:  pkgconfig(openssl)
+BuildRequires:  pkgconfig(pam)
 BuildRequires:  pkgconfig(wayfire)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wf-config)
+BuildRequires:  pkgconfig(wireplumber-0.5)
+BuildRequires:  pkgconfig(wlroots-0.20)
+BuildRequires:  pkgconfig(xkbregistry)
 
 %description
-wf-shell is a repository which contains the various components needed to built a fully functional DE based around wayfire. Currently it has only a GTK-based panel and background client.
+wf-shell is a repository which contains various components that can be used to build a fully functional desktop based around wayfire:
+
+    wf-panel, with widgets with various functionalities you would expect a desktop to have on quick access
+    wf-dock, to show opened windows, navigate to them, and (un)collapse them
+    wf-locker, a stylish and feature-full screen locker
+    wf-background, a simple background that can cycle through images
+
 
 %package devel
 Summary:        Development files for %{name}
