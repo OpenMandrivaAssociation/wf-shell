@@ -60,7 +60,11 @@ install -D -m 0644 wf-shell.ini.example %{buildroot}%{_datadir}/wayfire/wf-shell
 %files
 %{_bindir}/wf-*
 %{_bindir}/wayland-logout
+%{_sysconfdir}/pam.d/wf-locker
+%{_sysconfdir}/xdg/xdg-desktop-portal-wlr/wayfire
+%{_datadir}/applications/wf-locker-pin.desktop
 %{_datadir}/wayfire/wf-shell.ini.example
+%{_datadir}/wf-shell/
 %{_mandir}/man1/wayland-logout.1.*
 %{_iconsdir}/hicolor/*x*/apps/wayfire.png
 %{_iconsdir}/hicolor/scalable/apps/wayfire.svg
