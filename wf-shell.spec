@@ -6,6 +6,7 @@ License:        MIT
 Group:          Wayfire
 URL:            https://wayfire.org/
 Source0:        https://github.com/WayfireWM/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.xz
+Patch0:		https://gitweb.gentoo.org/repo/gentoo.git/tree/gui-apps/wf-shell/files/wf-shell-0.11.0-fix-clang.patch
 
 BuildRequires:  meson
 BuildRequires:  pkgconfig
@@ -60,10 +61,6 @@ install -D -m 0644 wf-shell.ini.example %{buildroot}%{_datadir}/wayfire/wf-shell
 %{_bindir}/wf-*
 %{_bindir}/wayland-logout
 %{_datadir}/wayfire/wf-shell.ini.example
-%{_datadir}/wayfire/icons/wayfire.png
-%{_datadir}/wayfire/metadata/
-%{_datadir}/wayfire/wallpaper.jpg
-%{_datadir}/wayfire/css/default.css
 %{_mandir}/man1/wayland-logout.1.*
 %{_iconsdir}/hicolor/*x*/apps/wayfire.png
 %{_iconsdir}/hicolor/scalable/apps/wayfire.svg
